@@ -26,8 +26,8 @@ with st.form("trade_form"):
         entry_price = st.number_input("Entry Price (₹)", min_value=0.0, value=1000.0, step=0.5)
 
     with col2:
-        stop_loss = st.number_input("Stop Loss (₹)", min_value=0.0, value=980.0, step=0.5)
-        target_price = st.number_input("Target Price (₹)", min_value=0.0, value=1050.0, step=0.5)
+        stop_loss = st.number_input("Stop Loss (₹)", min_value=0.0, value=110.0, step=0.5)
+        target_price = st.number_input("Target Price (₹)", min_value=0.0, value=150.0, step=0.5)
 
     st.subheader("2. Context & Reason")
     context_text = st.text_area(
@@ -85,7 +85,7 @@ Respond ONLY in this strict JSON format, no markdown, no extra text:
             try:
                 with st.spinner("AI trade setup analyze kar raha hai..."):
                     response = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-flash-latest",
                         contents=prompt
                     )
 
