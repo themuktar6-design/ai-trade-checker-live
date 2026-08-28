@@ -8,6 +8,8 @@ dependencies = [
     "streamlit>=1.61.1",
 "google-genai",
 ]
-
 [tool.uv]
 package = false
+
+[tool.poetry]
+package-mode = false
