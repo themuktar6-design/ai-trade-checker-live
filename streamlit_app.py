@@ -23,7 +23,7 @@ with st.form("trade_form"):
     with col1:
         asset_name = st.text_input("Asset / Stock Name", value="NIFTY / RELIANCE")
         trade_type = st.selectbox("Trade Type", ["BUY / LONG", "SELL / SHORT"])
-        entry_price = st.number_input("Entry Price (₹)", min_value=0.0, value=1000.0, step=0.5)
+        entry_price = st.number_input("Entry Price (₹)", min_value=0.0, value=120.0, step=0.5)
 
     with col2:
         stop_loss = st.number_input("Stop Loss (₹)", min_value=0.0, value=110.0, step=0.5)
